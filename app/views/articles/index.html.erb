@@ -2,7 +2,9 @@
 <ul>
     <% @articles.each do |article| %>
         <li>
-            <%= article.title %>
+            <%= link_to article.title, article %>
         </li>          
     <% end %>
 </ul>
+
+<%# 3 ways to do this listed in step 7.1-7.2 in rails guide %>
